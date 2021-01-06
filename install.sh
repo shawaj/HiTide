@@ -9,7 +9,7 @@ echo "deb http://archive.raspbian.org/raspbian stretch main" >> /etc/apt/sources
     && apt install ./libssl1.0.0_1.0.1t-1+deb8u12_armhf.deb \
     && curl -k -O -L http://security.debian.org/debian-security/pool/updates/main/c/curl/libcurl3_7.38.0-4+deb8u16_armhf.deb \
     && apt install ./libcurl3_7.38.0-4+deb8u16_armhf.deb \
-    && git clone https://github.com/seniorgod/ifi-tidal-release \
+    && git clone https://github.com/shawaj/ifi-tidal-release \
     && chmod +x /usr/ifi/ifi-tidal-release/play \
     && chmod +x /usr/ifi/ifi-tidal-release/bin/tidal_connect_application \
     && chmod +x /usr/ifi/ifi-tidal-release/pa_devs/run.sh
