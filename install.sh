@@ -2,7 +2,7 @@
 
 echo "deb http://archive.raspbian.org/raspbian stretch main" >> /etc/apt/sources.list \
     && apt update \
-    && install_packages multiarch-support libavformat57 git libportaudio2* libflac++6v5* libavahi-common3 libavahi-client3 alsa-utils \
+    && apt install -y multiarch-support libavformat57 git libportaudio2* libflac++6v5* libavahi-common3 libavahi-client3 alsa-utils \
     && mkdir /usr/ifi \
     && cd /usr/ifi \
     && curl -k -O -L http://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u12_armhf.deb \
